@@ -1,0 +1,12 @@
+inherit pygtk
+
+HOMEPAGE="http://gtkglext.sourceforge.net/"
+SRC_URI="mirror://sourceforge/gtkglext/${ORIG_PN}-${PV}.tar.gz"
+
+# There's a broken make rule somewhere
+DIFF_EXCLUDES+=" *glext.c"
+
+src_install() {
+	cd ${B}
+	cyginstall LIBS="-no-undefined ${LIBPYTHON}"
+}
