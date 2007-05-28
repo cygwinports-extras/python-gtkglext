@@ -11,6 +11,7 @@ Runtime requirements:
   python-2.5.1-1
   python-gobject2-2.12.3-2
   python-gtk2-2.10.4-2
+  python-opengl-3.0.0a6-1
 
 Build requirements:
 (besides corresponding -devel packages)
