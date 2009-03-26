@@ -3,28 +3,27 @@ python-gtkglext
 Python bindings for the GtkGLExt library.
 
 Runtime requirements:
-  cygwin-1.5.24-2
-  glib2-2.12.12-1
-  gtk2-x11-2.10.12-1
-  gtkglext-x11-1.2.0-1
-  pango-1.16.4-1
-  python-2.5.1-1
-  python-gobject2-2.12.3-2
-  python-gtk2-2.10.4-2
-  python-opengl-3.0.0a6-1
+  cygwin-1.7.0-44
+  libglib2.0_0-2.20.0-1
+  libgtk2.0_0-2.16.0-1
+  libgtkglext1.0_0-1.2.0-10
+  libpango1.0_0-1.24.0-1
+  python-2.5.4-10
+  python-gobject2-2.16.1-10
+  python-gtk2-2.14.1-1
+  python-opengl-3.0.0c1-10
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.24-2
-  autoconf2.5-2.61-1
-  automake1.9-1.9.6-2
-  binutils-20060817-1
-  cygport-0.3.1-1
-  gawk-3.1.5-4
-  gcc-core-3.4.4-3
-  libtool1.5-1.5.23a-2
-  make-3.81-1
-  pkg-config-0.21-1
+  autoconf2.5-2.63-10
+  automake1.9-1.9.6-10
+  binutils-20080624-2
+  cygport-0.9.6-1
+  gawk-3.1.6-2
+  gcc4-core-4.3.2-2
+  libtool-2.2.6a-2
+  make-3.81-2
+  pkg-config-0.23a-2
   sed-4.1.5-2
 
 Canonical website:
@@ -36,15 +35,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack python-gtkglext-1.1.0-1-src.tar.bz2
+  unpack python-gtkglext-1.1.0-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./python-gtkglext-1.1.0-1.cygport all
+  cygport ./python-gtkglext-1.1.0-X.cygport all
 
 This will create:
-  /usr/src/python-gtkglext-1.1.0-1-src.tar.bz2
-  /usr/src/python-gtkglext-1.1.0-1.tar.bz2
+  /usr/src/python-gtkglext-1.1.0-X-src.tar.bz2
+  /usr/src/python-gtkglext-1.1.0-X.tar.bz2
 
 -------------------------------------------
 
@@ -71,12 +70,11 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/gtk-2.0/gtk/gtkgl/widget.pyc
   /usr/lib/python2.5/site-packages/gtk-2.0/gtk/gtkgl/widget.pyo
   /usr/share/doc/Cygwin/python-gtkglext-1.1.0.README
-  /usr/share/doc/python-gtkglext-1.1.0/AUTHORS
-  /usr/share/doc/python-gtkglext-1.1.0/COPYING
-  /usr/share/doc/python-gtkglext-1.1.0/COPYING.LIB
-  /usr/share/doc/python-gtkglext-1.1.0/ChangeLog
-  /usr/share/doc/python-gtkglext-1.1.0/INSTALL
-  /usr/share/doc/python-gtkglext-1.1.0/README
+  /usr/share/doc/python-gtkglext/AUTHORS
+  /usr/share/doc/python-gtkglext/COPYING
+  /usr/share/doc/python-gtkglext/COPYING.LIB
+  /usr/share/doc/python-gtkglext/ChangeLog
+  /usr/share/doc/python-gtkglext/README
   /usr/share/pygtk/2.0/defs/gdkglext-types.defs
   /usr/share/pygtk/2.0/defs/gdkglext.defs
   /usr/share/pygtk/2.0/defs/gtkglext.defs
@@ -86,17 +84,8 @@ Files included in the binary package:
 
 Port Notes:
 
------ version 1.1.0-2 -----
-Rebuilt for python-2.5.
-
------ version 1.1.0-1 -----
-Version bump.
-
------ version 1.0.1-2 -----
-Rebuilt for python-2.4.
-
------ version 1.0.1-1 -----
-Initial release for Cygwin.
+----- version 1.1.0-10 -----
+Initial release for Cygwin 1.7.
 
 
 Cygwin port maintained by:
