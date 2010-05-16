@@ -1,0 +1,11 @@
+--- origsrc/pygtkglext-1.1.0/configure.in	2006-04-16 20:22:04.000000000 -0500
++++ src/pygtkglext-1.1.0/configure.in	2010-05-16 17:21:38.222944400 -0500
+@@ -119,6 +119,8 @@ AM_CONDITIONAL([OS_WIN32], [test "$os_wi
+ AC_DISABLE_STATIC
+ AC_LIBTOOL_WIN32_DLL
+ AC_PROG_LIBTOOL
++dnl when using libtool 2.x create libtool early, because it's used in configure
++m4_ifdef([LT_OUTPUT], [LT_OUTPUT])
+ 
+ # Check for python
+ #AM_PATH_PYTHON([2.2])

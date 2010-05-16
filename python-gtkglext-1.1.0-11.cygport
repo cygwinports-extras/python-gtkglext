@@ -3,6 +3,8 @@ inherit pygtk
 HOMEPAGE="http://gtkglext.sourceforge.net/"
 SRC_URI="mirror://sourceforge/gtkglext/${ORIG_PN}-${PV}.tar.gz"
 
+PATCH_URI="1.1.0-libtool22.patch"
+
 # There's a broken make rule somewhere
 DIFF_EXCLUDES+=" *glext.c"
 
