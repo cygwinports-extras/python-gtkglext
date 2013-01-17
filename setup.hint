@@ -1,5 +1,0 @@
-category: Gnome Python
-requires: libgcc1 libglib2.0_0 libgtk2.0_0 libgtkglext1.0_0 libpango1.0_0 python python-gobject2.0 python-gtk2.0 python-opengl
-sdesc: "Python bindings for the GtkGLExt library"
-ldesc: "Python bindings for the GtkGLExt library"
-

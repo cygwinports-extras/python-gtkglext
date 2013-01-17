@@ -1,9 +1,17 @@
 inherit pygtk
 
+NAME="python-gtkglext"
+VERSION=1.1.0
+RELEASE=12
+CATEGORY="Python"
+SUMMARY="Python bindings for the GtkGLExt library"
+DESCRIPTION="Python bindings for the GtkGLExt library"
 HOMEPAGE="http://gtkglext.sourceforge.net/"
 SRC_URI="mirror://sourceforge/gtkglext/${ORIG_PN}-${PV}.tar.gz"
-
 PATCH_URI="1.1.0-libtool22.patch"
+
+# required for libtool2
+WANT_AUTOMAKE=1.9
 
 # There's a broken make rule somewhere
 DIFF_EXCLUDES+=" *glext.c"
